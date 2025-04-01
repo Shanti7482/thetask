@@ -91,7 +91,7 @@ $service_images=SERVICE_IMAGE;
     <nav class="bg-white shadow-md fixed w-full top-0 z-50 ">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-600 "><img
-                    src="<?php echo base_url('assets/images/logo.png') ?>" alt="logo" srcset=""
+                    src="<?php echo base_url('assets/images/logo.png') ?>" alt="logo"
                     class="w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] md:w-[180px] md:h-[60px] lg:w-[200px] lg:h-[70px] object-contain"></a>
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">☰</button>
             <ul class="hidden md:flex space-x-6" id="menu">
