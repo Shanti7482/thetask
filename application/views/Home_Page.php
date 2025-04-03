@@ -11,9 +11,9 @@ $service_images=SERVICE_IMAGE;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/images/favicon-32x32.png') ?>"> -->
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://panaceamedicare-re.onrender.com/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/images/favicon-32x32.png') ?>">
+    <!-- <link rel="icon" type="image/png" sizes="32x32"
+        href="https://panaceamedicare-re.onrender.com/assets/images/favicon-32x32.jpeg">s -->
     <title>Panaceamedicare | Home </title>
 
     <!-- Tailwind CSS -->
@@ -92,7 +92,7 @@ $service_images=SERVICE_IMAGE;
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-600 ">
                 <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="logo"
-                    class="w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] md:w-[180px] md:h-[60px] lg:w-[200px] lg:h-[70px] object-contain">
+                    class="bg-inherit w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] md:w-[180px] md:h-[60px] lg:w-[200px] lg:h-[70px] object-contain">
             </a>
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">☰</button>
             <ul class="hidden md:flex space-x-6" id="menu">
@@ -231,7 +231,7 @@ $service_images=SERVICE_IMAGE;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
         loop: true,
@@ -246,7 +246,7 @@ $service_images=SERVICE_IMAGE;
     });
 
 
-    var swiper = new Swiper(".ourTeamSwiper", {
+    var swiper2 = new Swiper(".ourTeamSwiper", {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 20,
@@ -265,19 +265,20 @@ $service_images=SERVICE_IMAGE;
     });
 
 
-    document.querySelector('.ourTeamSwiper').addEventListener('mouseenter', function() {
-        swiper.autoplay.stop();
-    });
-    document.querySelector('.ourTeamSwiper').addEventListener('mouseleave', function() {
-        swiper.autoplay.start();
-    });
-
     document.querySelector('.mySwiper').addEventListener('mouseenter', function() {
-        swiper.autoplay.stop();
+        swiper1.autoplay.stop();
     });
     document.querySelector('.mySwiper').addEventListener('mouseleave', function() {
-        swiper.autoplay.start();
+        swiper1.autoplay.start();
     });
+    document.querySelector('.ourTeamSwiper').addEventListener('mouseenter', function() {
+        swiper2.autoplay.stop();
+    });
+    document.querySelector('.ourTeamSwiper').addEventListener('mouseleave', function() {
+        swiper2.autoplay.start();
+    });
+
+
 
     document.getElementById("menu-toggle").addEventListener("click", function() {
         document.getElementById("mobile-menu").classList.toggle("menu-hidden");

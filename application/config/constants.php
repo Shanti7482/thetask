@@ -85,7 +85,8 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 
-define("HOHE_SWIPER_IAMGE", array('assets/images/banner_1.avif','assets/images/banner_2.avif','assets/images/banner_3.avif','assets/images/banner_4.avif','assets/images/banner_5.avif','assets/images/banner_6.jpeg'));
+// define("HOHE_SWIPER_IAMGE", array('assets/images/banner_1.avif','assets/images/banner_2.avif','assets/images/banner_3.avif','assets/images/banner_4.avif','assets/images/banner_5.avif','assets/images/banner_6.jpeg'));
+define("HOHE_SWIPER_IAMGE", array('assets/images/hero/hero_1.jpeg','assets/images/hero/hero_2.jpeg','assets/images/hero/hero_3.jpeg','assets/images/hero/hero_4.jpeg','assets/images/hero/hero_5.jpeg'));
 
 define("SERVICE_IMAGE",array(array('name'=>'Gynaecology','image'=>'assets/images/services_img/service_1.webp'),
                             array('name'=>'Urology','image'=>'assets/images/services_img/service_2.webp'),
