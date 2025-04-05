@@ -97,16 +97,86 @@ $service_images=SERVICE_IMAGE;
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">☰</button>
             <ul class="hidden md:flex space-x-6" id="menu">
                 <li><a href="#home" class="text-gray-600 font-medium hover:text-blue-600 ">Home</a></li>
-                <li><a href="#about" class="text-gray-600 font-medium hover:text-blue-600">About</a></li>
-                <li><a href="#services" class="text-gray-600 font-medium hover:text-blue-600">Services</a></li>
+                <li><a href="#about" class="text-gray-600 font-medium hover:text-blue-600">About Us</a></li>
+
+                <!-- Specialties Dropdown -->
+                <li class="relative group">
+                    <button class="text-gray-600 font-medium hover:text-blue-600 focus:outline-none">Specialties <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-md  rounded-md w-48">
+                        <li><a href="#cardiology" class="block px-4 py-2 hover:bg-blue-100">Cardiology</a></li>
+                        <li><a href="#neurology" class="block px-4 py-2 hover:bg-blue-100">Neurology</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Orthopedics</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Neurology</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Gynecological &amp;
+                                Laproscopic Surgery</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Fetal Medicine and
+                                Radiology</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Fertility</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Paediatrics</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Neonatology</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">General Surgery</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Internal Medicine</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Cosmetology</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Nutrition</a></li>
+                        <li><a href="#orthopedics" class="block px-4 py-2 hover:bg-blue-100">Physiotherapy</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <button class="text-gray-600 font-medium hover:text-blue-600 focus:outline-none">Gallery <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md w-auto">
+                        <li><a href="#photos" class="block px-4 py-2 hover:bg-blue-100">Photos</a></li>
+                        <li><a href="#videos" class="block px-4 py-2 hover:bg-blue-100">Videos</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact" class="text-gray-600  font-medium hover:text-blue-600">Contact</a></li>
+                <li><a href="#contact" class="text-gray-600  font-medium hover:text-blue-600">SignIn/SignUp</a></li>
             </ul>
         </div>
+
+
         <div class="md:hidden bg-white p-4 menu-hidden" id="mobile-menu">
             <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
-            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
-            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <!-- Mobile Specialties Dropdown -->
+
+            <div>
+                <button class="w-full text-left py-2 text-gray-600 hover:text-blue-600"
+                    onclick="toggleSubMenu('specialties-menu','togleIcon')">Specialties <i
+                        class="fa-solid fa-angle-down" id="togleIcon"></i></button>
+                <div id="specialties-menu" class="hidden pl-4">
+                    <a href="#cardiology" class="block py-1 text-gray-500 hover:text-blue-500">Cardiology</a>
+                    <a href="#neurology" class="block py-1 text-gray-500 hover:text-blue-500">Neurology</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Orthopedics</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Gynecological &amp;
+                        Laproscopic Surgery</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Fetal Medicine and
+                        Radiology</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Fertility</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Paediatrics</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Neonatology</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">General Surgery</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Internal Medicine</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Cosmetology</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Nutrition</a>
+                    <a href="#orthopedics" class="block py-1 text-gray-500 hover:text-blue-500">Physiotherapy</a>
+                </div>
+            </div>
+
+            <!-- Mobile Gallery Dropdown -->
+            <div>
+                <button class="w-full text-left py-2 text-gray-600 hover:text-blue-600"
+                    onclick="toggleSubMenu('gallery-menu','togleIcon')">Gallery <i class="fa-solid fa-angle-down"
+                        id="togleIcon"></i></button>
+                <div id="gallery-menu" class="hidden pl-4">
+                    <a href="#photos" class="block py-1 text-gray-500 hover:text-blue-500">Photos</a>
+                    <a href="#videos" class="block py-1 text-gray-500 hover:text-blue-500">Videos</a>
+                </div>
+            </div>
             <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">SignIn/SignUp</a>
+
         </div>
     </nav>
 
@@ -221,11 +291,11 @@ $service_images=SERVICE_IMAGE;
     </footer>
 
     <!-- Go to Top Button -->
-    <button id="top-button" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i>
+    <button id="top-button" class="animate-bounce" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i>
         </i></button>
 
     <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/1234567890" target="_blank" id="whatsapp-button">💬</a>
+    <!-- <a href="https://wa.me/1234567890" target="_blank" id="whatsapp-button">💬</a> -->
 
     <!-- Swiper.js Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -286,6 +356,23 @@ $service_images=SERVICE_IMAGE;
         toggleButton.textContent = toggleButton.textContent === "☰" ? "X" : "☰";
 
     });
+
+    function toggleSubMenu(id, toggleIconId) {
+        const menu = document.getElementById(id);
+        const iconId = document.getElementById(toggleIconId)
+        menu.classList.toggle('hidden');
+
+        if (iconId.classList.contains('fa-angle-down')) {
+            iconId.classList.remove('fa-angle-down');
+            iconId.classList.add('fa-angle-up');
+        } else {
+            iconId.classList.remove('fa-angle-up');
+            iconId.classList.add('fa-angle-down');
+        }
+
+    }
+
+
 
     window.onscroll = function() {
         scrollFunction()
