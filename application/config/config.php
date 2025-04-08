@@ -26,10 +26,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $config['base_url'] = '';
 
 
-$root = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
+// $root = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
+// $root .= "://".$_SERVER['HTTP_HOST'];
+// $root .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+// $config['base_url'] = $root;
+
+$https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+         || (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+
+$root = $https ? "https" : "http";
 $root .= "://".$_SERVER['HTTP_HOST'];
 $root .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+
 $config['base_url'] = $root;
+
 
 
 /*
