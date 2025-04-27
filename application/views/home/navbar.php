@@ -102,7 +102,7 @@
                 </div>
             </div>
             <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">SignIn/SignUp</a>
+            <a href="<?= base_url('signup');?>" class="block py-2 text-gray-600 hover:text-blue-600">SignUp</a>
 
         </div>
     </nav>
