@@ -50,9 +50,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'HomeController';
+$route['book-appointment'] = 'HomeController/bookAppointment';
+$route['book-video-consultation'] = 'HomeController/bookVideoConsultation';
+$route['book-scan'] = 'HomeController/bookScan';
+$route['book-vaccination'] = 'HomeController/bookVaccination';
+$route['query'] = 'HomeController/SubmitYourQuery';
+
+
+//Auth Route
+$route['login'] = 'AuthController/loginPage';
+$route['signup'] = 'AuthController/signUpPage';
 
 
 
 
-$route['404_override'] = '';
+$route['404_override'] = 'HomeController/pageNotFound';
 $route['translate_uri_dashes'] = FALSE;
