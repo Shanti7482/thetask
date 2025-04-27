@@ -1,6 +1,8 @@
 # Use PHP 7.4 with Apache
 FROM php:7.4-apache
 
+RUN chmod -R 777 /var/www/html/application/cache/ && \
+    chmod -R 777 /var/www/html/application/logs/
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
