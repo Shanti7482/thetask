@@ -7,7 +7,7 @@ class HomeController extends CI_Controller {
         parent::__construct();
         // check_login();
         // $this->load->helper('url');
-        // $this->load->helper('customscript_helper');
+        $this->load->helper('custom_script');
         // $this->load->helper('Crud_helper');
         $this->load->helper('my_custom');
         
