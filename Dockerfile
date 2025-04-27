@@ -1,7 +1,6 @@
 # Use PHP 7.4 with Apache
 FROM php:7.4-apache
 
-
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
@@ -14,7 +13,7 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . /var/www/html/
 
-# Set permissions
+# Set permissions for Apache (so it can access the files)
 RUN chown -R www-data:www-data /var/www/html/
 
 # Install phpMyAdmin
@@ -26,7 +25,7 @@ RUN apt-get update && \
     rm /tmp/phpmyadmin.zip && \
     chown -R www-data:www-data /var/www/html/phpmyadmin
 
-# Expose port 80
+# Expose port 80 (Apache HTTP)
 EXPOSE 80
 
 # Start Apache

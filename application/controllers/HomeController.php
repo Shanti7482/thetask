@@ -8,7 +8,8 @@ class HomeController extends CI_Controller {
         // check_login();
         // $this->load->helper('url');
         // $this->load->helper('customscript_helper');
-        $this->load->helper('Crud_helper');
+        // $this->load->helper('Crud_helper');
+        $this->load->helper('my_custom');
         
         
     }

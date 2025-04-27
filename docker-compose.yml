@@ -7,9 +7,14 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/var/www/html
+      - .:/var/www/html  # Mount current directory to the container
     depends_on:
       - db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=my_database
+      - MYSQL_USER=my_user
+      - MYSQL_PASSWORD=my_password
 
   db:
     image: mysql:5.7
@@ -38,5 +43,4 @@ services:
       - db
 
 volumes:
-  db_data:
-  
+  db_data:  # Define volume for MySQL database data persistence
