@@ -1,7 +1,7 @@
 <?php
 defined("BASEPATH") or exit('No direct access allowed');
 
-class Crud_helper
+class Crud
 {
     public static $database;
     public static $response;
