@@ -97,3 +97,56 @@ define("SERVICE_IMAGE",array(array('name'=>'Gynaecology','image'=>'assets/images
                             array('name'=>'Neonatology (NICU)','image'=>'assets/images/services_img/service_7.png'),
                             array('name'=>'Immunisation','image'=>'assets/images/services_img/service_8.png'),
                             array('name'=>'Yoga & Physiotherapy','image'=>'assets/images/services_img/service_9.png')));
+
+
+
+
+
+
+define('DOCTOR_INFO',array(
+    array('name'=>'Dr. Supriya Narayan',
+    'image'=>'assets/images/doctor_image/doctor_image_1.png',
+    'title'=>'MBBS (PMCH Patna), MD Radiology (Gold Medalist - DMCH Darbhanga)',
+    'subtitle'=>'CEO and Senior Consultant Obstetrician & Gynecologist',
+    'description'=>' Dr. Supriya Narayan is a renowned Obstetrician & Gynaecologist associated with Paras Global
+                        Hospital, Laheriasarai. With over 11+ years of clinical experience, she has worked across
+                        multiple esteemed hospitals across India.<br>
+                        She is widely respected for her accurate diagnosis and empathetic approach to patient care.
+                        Her core expertise lies in Obstetrics, Prenatal Care, Childbirth, and managing various
+                        Gynecological conditions.<br>
+                        Dr. Narayan completed her MBBS from the University of Patna in 2008 and earned her MS in
+                        Obstetrics & Gynaecology from PMCH, Patna. She has actively contributed to research,
+                        authored academic papers, and participated in several national workshops. She has also
+                        received awards in surgical excellence within her field.',
+    'status'=>1
+),
+    array('name'=>'Dr. Surya Narayan',
+    'image'=>'assets/images/doctor_image/doctor_image_2.jpeg',
+    'title'=>'un',
+    'subtitle'=>'un',
+    'description'=>'un',
+    'status'=>1
+),
+    array('name'=>'Dr. Deepak Kumar Sah',
+    'image'=>'assets/images/doctor_image/doctor_image_3.jpeg',
+    'title'=>'un',
+    'subtitle'=>'un',
+    'description'=>'un',
+    'status'=>1
+),
+    array('name'=>'Dr. Abhijit',
+    'image'=>'assets/images/doctor_image/doctor_image_4.jpeg',
+    'title'=>'un',
+    'subtitle'=>'un',
+    'description'=>'un',
+    'status'=>1
+),
+    array('name'=>'Dr. Rajeev Ranjan',
+    'image'=>'assets/images/doctor_image/doctor_image_5.jpeg',
+    'title'=>'un',
+    'subtitle'=>'un',
+    'description'=>'un',
+    'status'=>1
+    )
+
+));

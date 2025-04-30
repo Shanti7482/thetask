@@ -26,6 +26,11 @@ class HomeController extends CI_Controller {
         $data['view']='page_not_found';
         $this->load->view('home/main',$data);
     }
+    public function contactUs()
+    {
+        $data['view']='contact_us';
+        $this->load->view('home/main',$data);
+    }
     public function bookAppointment()
     {
         $data['view']='booking/book_appointment';
